@@ -14,7 +14,7 @@
 CSS代码大概是下面这样子：
 ```html
 .灯 {
-	animation: 13s 灯对应的动画过程名 infinite;
+  animation: 13s 灯对应的动画过程名 infinite;
 }
 
 @keyframes 灯对应的动画过程名 {
@@ -33,79 +33,79 @@ CSS代码大概是下面这样子：
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>纯css红绿灯</title>
-	<style type="text/css" media="screen">
-		/* 维持形状的基本样式 */
-		.trafficlight {
-			border: 1px solid #ccc;
-	    width: 100px;
-	    padding: 20px;
-	    margin: 0 auto;
-		}
+  <meta charset="UTF-8">
+  <title>纯css红绿灯</title>
+  <style type="text/css" media="screen">
+    /* 维持形状的基本样式 */
+    .trafficlight {
+      border: 1px solid #ccc;
+      width: 100px;
+      padding: 20px;
+      margin: 0 auto;
+    }
 		
-		.trafficlight>div {
-			width: 100px;
-		  height: 100px;
-		  border-radius: 50%;
-		}
+    .trafficlight>div {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
 
-		/* 关键代码 */
-		.red {
-			background: red;
-			animation: 13s red infinite; /* 应用动画 */
-		}
-		.yellow {
-			background: yellow;
-			animation: 13s yellow infinite; /* 应用动画 */
-		}
-		.green {
-			background: green;
-			animation: 13s green infinite; /* 应用动画 */
-		}
+    /* 关键代码 */
+    .red {
+      background: red;
+      animation: 13s red infinite; /* 应用动画 */
+    }
+    .yellow {
+      background: yellow;
+      animation: 13s yellow infinite; /* 应用动画 */
+    }
+    .green {
+      background: green;
+      animation: 13s green infinite; /* 应用动画 */
+    }
 		
 
-		/* 作用于红灯的动画 */
-		@keyframes red{
-		  0%{opacity: 1;}
-		  20%{opacity: 1;}
-		  40%{opacity: 1;}
-		  60%{opacity: .1;}
-		  80%{opacity: .1;}
-		  100%{opacity: .1;}
-		}
+    /* 作用于红灯的动画 */
+    @keyframes red{
+      0%{opacity: 1;}
+      20%{opacity: 1;}
+      40%{opacity: 1;}
+      60%{opacity: .1;}
+      80%{opacity: .1;}
+      100%{opacity: .1;}
+    }
 
-		/* 作用于黄灯的动画 */
-		@keyframes yellow{
-		  0%{opacity: .1;}
-		  20%{opacity: .1;}
-		  40%{opacity: 1;}
-		  50%{opacity: .1;}
-		  60%{opacity: .1;}
-		  80%{opacity: .1;}
-		  100%{opacity: .1;}
-		}
+    /* 作用于黄灯的动画 */
+    @keyframes yellow{
+      0%{opacity: .1;}
+      20%{opacity: .1;}
+      40%{opacity: 1;}
+      50%{opacity: .1;}
+      60%{opacity: .1;}
+      80%{opacity: .1;}
+      100%{opacity: .1;}
+    }
 
-		/* 作用于绿灯的动画 */
-		@keyframes green{
-		  0%{opacity: .1;}
-		  20%{opacity: .1;}
-		  40%{opacity: .1;}
-		  60%{opacity: 1;}
-		  80%{opacity: 1;}
-		  85%{opacity: .1;}
-		  90%{opacity: 1;}
-		  95%{opacity: .1;}
-		  100%{opacity: 1;}
-		}
-	</style>
+    /* 作用于绿灯的动画 */
+    @keyframes green{
+      0%{opacity: .1;}
+      20%{opacity: .1;}
+      40%{opacity: .1;}
+      60%{opacity: 1;}
+      80%{opacity: 1;}
+      85%{opacity: .1;}
+      90%{opacity: 1;}
+      95%{opacity: .1;}
+      100%{opacity: 1;}
+    }
+  </style>
 </head>
-	<body>
-		<div class="trafficlight">
-			<div class="red"></div>
-			<div class="yellow"></div>
-			<div class="green"></div>
-		</div>
-	</body>
+  <body>
+    <div class="trafficlight">
+      <div class="red"></div>
+      <div class="yellow"></div>
+      <div class="green"></div>
+    </div>
+   </body>
 </html>
 ```
