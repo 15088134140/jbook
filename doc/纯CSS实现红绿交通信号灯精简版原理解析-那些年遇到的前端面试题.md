@@ -9,9 +9,7 @@
 
 ## 实现分析  
 用纯CSS实现该效果，不像JS可以整体形式来处理，更没有定时器。而CSS样式具有独立性，因此这里将红、黄、绿灯独立开来，三者的亮度变化处于同步进行中，现用13秒的时间完成一个过程，之后不断重复，而又将一个过程分为5段，每20%为一段，如图。  
-综上，实现这个过程，这里当然需要用到CSS的`animation`属性，并用`@keyframes`为每个灯自定义一个动画过程，再通过`infinite`不断重复此过程。  
-更多CSS的`animation`用法：[animation - CSS - MDN - Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)  
-CSS代码大概是下面这样子：
+综上，实现这个过程，这里当然需要用到CSS的`animation`属性，并用`@keyframes`为每个灯自定义一个动画过程，再通过`infinite`不断重复此过程。CSS代码大概是下面这样子：
 ```html
 .灯 {
   animation: 13s 灯对应的动画过程名 infinite;
@@ -26,7 +24,7 @@ CSS代码大概是下面这样子：
   100%{opacity: .1;}
 }
 ```
-
+更多CSS的`animation`用法：[animation - CSS - MDN - Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)  
 ## 具体实现  
 这里需要实现三个灯的动画过程，因绿灯存在闪烁动画，具体实现稍有区别，具体代码如下：
 ```html
