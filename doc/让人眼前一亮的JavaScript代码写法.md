@@ -53,3 +53,11 @@ console.log(+'n1'); // => NaN
 console.log(parseInt('1n')); // => 1
 console.log(parseInt('n1')); // => NaN
 ```
+## 判断Node元素包含关系
+`Node.contains()`返回的是一个布尔值，来表示传入的节点是否为该节点的后代节点。A.contains(B)可用于判断B是否为A的子元素，且该API的浏览器兼容性较高。
+```js
+var div = document.createElement('div'); 
+console.log(document.contains(div)); // => false
+document.querySelector('body').append(div); 
+console.log(document.contains(div)); // => true
+```
