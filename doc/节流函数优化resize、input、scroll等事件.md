@@ -1,4 +1,4 @@
-> 作者：*Mark*　　来源：*原创*　　同步发布：*[www.jsin.net](http://www.jsin.net)*  GitHub：*[jbook](https://github.com/15088134140/jbook/tree/master/doc)*  
+> 作者：*Mark*　　来源：*原创*　　同步发布：*[www.jsin.net](http://www.jsin.net)*   GitHub：*[jbook](https://github.com/15088134140/jbook/tree/master/doc)*  
 > *转载请注明出处*   
 
 ## 使用场景
