@@ -5,9 +5,19 @@
 ```js
 [1, 2, 2, 4, 4].filter((item, index, arr) => arr.indexOf(item) === index); // => [1, 2, 4]
 ```
+## 数组浅拷贝
+```js
+let a = [1, 2];
+let b = a.slice();
+
+a.push(3);
+
+console.log(a); // => [1, 2]
+console.log(b); // => [1, 2, 3]
+```
 ## ES6中使用Set去重
 ```js
-[...new Set([1, 2, 2, 4, 4])] // => [1, 2, 4]
+[...new Set([1, 2, 2, 4, 4])]; // => [1, 2, 4]
 ```
 ## ES6中对解构赋值的变量重命名
 当运行上文中已存在一个名为`name`的变量时，如果运用ES6的解构赋值`let { name } = book`将会出现变量名重复定义的错误。
